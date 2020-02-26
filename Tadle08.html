@@ -6,7 +6,31 @@
     </script>
     <style>
         h1 {
+            margin-top: 40px;
             text-align: center;
+            font-family: Georgia, serif;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        fieldset
+        {
+            text-align: center;
+            font-family: "Tahoma";
+            justify-content: center;
+            background-color:wheat;
+        }
+        
+        body
+        {
+            background-color: lightblue;
+        }
+        legend 
+        {
+            text-decoration-line: overline underline;
+            background-color: white;
         }
     </style>
 </head>
@@ -16,36 +40,46 @@
         <h1><i>
                 UP Mindanao Airline Express<br>
             </i></h1>
+    
     </div>
     <div>
         <h1><i>
-                Online booking<br>
+                Online Booking<br>
             </i></h1>
     </div>
 
 
     <br><br>
-    <div>
-        Passenger and Flight Details:
-    </div><br>
-    <p>Last Name: <input type="text" id="LastName"> </p>
-    <p>First Name: <input type="text" id="FirstName"></p>
 
-    <label for="Gender">Gender:</label>
 
-    <select id="Gender">
-        <option value="Male"> Male</option>
-        <option value="Female">Female</option>
-        <option value="Others">Others</option>
-    </select>
+    <fieldset>
+        <legend><b>
+                Passenger and Flight Details:</b>
+        </legend>
 
-    <p>Email Address: <input type="text" id="Email"></p>
-    <p>Origin: <input type="text" id="Origin"></p>
-    <p>Destination: <input type="text" id="Destination"></p>
-    <p><label for="Departure">Departure Date:</label>
-        <input type="date" id="Departure"></p>
-    <p><label for="Return">Return Date:</label>
-        <input type="date" id="Return"></p>
-    <button type="button" onclick="input()">Submit</button>
-    <p id="display"></p>
+        <br>
+        <p>Last Name: <input type="text" id="LastName"> </p>
+        <p>First Name: <input type="text" id="FirstName"></p>
+
+        <label for="Gender">Gender:</label>
+
+        <select id="Gender">
+            <option value="Male"> Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <p>Email Address: <input type="text" id="Email"></p>
+        <p>Origin: <input type="text" id="Origin"></p>
+        <p>Destination: <input type="text" id="Destination"></p>
+        <p><label for="Departure">Departure Date:</label>
+            <input type="date" id="Departure"></p>
+        <p><label for="Return">Return Date:</label>
+            <input type="date" id="Return"></p>
+        <button type="button" onclick="input()">Submit</button>
+        <p id="display" text-align="center"></p>
+
+    </fieldset>
+
+
+
 </body></html>

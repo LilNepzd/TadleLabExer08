@@ -9,8 +9,12 @@ function input() {
     var departure = document.getElementById("Departure").value;
     var returndate = document.getElementById("Return").value;
 
-
-
+    lastName = lastName.trim();
+    firstName = firstName.trim();
+    email = email.trim();
+    origin = origin.trim();
+    destination = destination.trim();
+    
     if (!lastName || !firstName || !email || !origin || !destination || !departure || !returndate || gender.value == "Select") {
         alert("Fill up all fields first.");
     } else if (email.includes("@") == false) {
